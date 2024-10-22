@@ -57,7 +57,7 @@ for(let i = 0; i < 2; i++){
 
 
 
-let pin = 2424;
+/* let pin = 2424;
 
 let numero = prompt("Escribeme un número");
 
@@ -66,4 +66,21 @@ console.log(numero);
 let numero2 = prompt("Dame otro número");
 
 console.log(numero2);
+ */
 
+let contraseñaCorrecta = "tacosalpastor4"; 
+let contraseñaIngresada = ""; 
+let intentos = 5;
+while (contraseñaIngresada !== contraseñaCorrecta && intentos > 0) {
+    contraseñaIngresada = prompt("Ingrese la contraseña:");
+    if (contraseñaIngresada !== contraseñaCorrecta) {
+        alert("Contraseña incorrecta. Intente nuevamente.");
+        intentos--;
+    } else {
+        alert("¡Contraseña correcta!");
+    }
+}
+
+if(intentos === 0){
+    alert("Se acabaron los intentos");
+}
