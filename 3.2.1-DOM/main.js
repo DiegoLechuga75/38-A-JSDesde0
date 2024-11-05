@@ -33,9 +33,9 @@ console.log(paragraph);
 let paragraphText = document.createTextNode("Hola mundo");
 console.log(paragraphText);
 
-paragraph.appendChild(paragraphText);
+paragraph.appendChild(paragraphText); //Añade el nodo a el elemento padre
 
-arrayContainersQuery[0].appendChild(paragraph);
+arrayContainersQuery[0].appendChild(paragraph); //Añade el nodo a el elemento padre
 
 //-------------------------------------------------------------
 //Modificación de texto en un elemento
@@ -47,7 +47,7 @@ let specialContainer = document.querySelector("#special-container");
 specialContainer.innerHTML = `
     <h1>Aquí se inserta HTML</h1>
     <p>innerHTML</p>
-`;
+`; //Modifica el HTML que tenga adentro un elemento
 
 let displayedImage = true;
 
